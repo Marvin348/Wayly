@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@plugin 'tailwind-scrollbar';
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+body {
+  font-family: "Poppins";
+}
+@theme {
+  --color-accent: #4b90ff;
+  --color-footer: #00071c;
+}
+
+@layer utilities {
+  .overlay {
+    @apply fixed inset-0 bg-black/50 z-100 flex items-center justify-center px-8;
+  }
+  .btn {
+    @apply w-full rounded-md h-12 bg-accent text-white font-medium cursor-pointer;
+  }
+  .modal {
+    @apply bg-white p-8 overflow-y-auto rounded-md z-500;
+  }
+  .input {
+    @apply bg-white p-2 rounded-md text-black outline-none w-full;
+  }
+}
+
+.custome-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #d1d5db #f9fafb;
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f9fafb;
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #e6e7e8;
+  border-radius: 9999px;
+}
