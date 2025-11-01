@@ -19,8 +19,8 @@ const SavedRouteItem = ({ routes, index }) => {
         <RiMoonClearFill />
         {maxNights} Nächte
       </p>
-      <p className="flex items-center gap-2">
-        {routes.markers.map(({ name }) => name).join(" - ")}
+      <p className="flex items-start gap-2">
+        <FaCity className="shrink-0 mt-1" /> {routes.markers.map(({ name }) => name).join(" - ")}
       </p>
       <SavedRoutesDetailsToggle />
     </div>

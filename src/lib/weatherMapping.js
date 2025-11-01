@@ -1,9 +1,9 @@
-import partlyCloudyDay from "../assets/weathericons/partlyCloudyDay.svg";
-import partlyCloudyNight from "../assets/weathericons/partlyCloudyNight.svg";
-import rainy from "../assets/weathericons/rainy.svg";
-import thunderstorm from "../assets/weathericons/thunderstorm.svg";
-import showers from "../assets/weathericons/showers.svg";
-import clearDay from "../assets/weathericons/clearDay.svg";
+import partlyCloudyDay from "@/assets/weathericons/partlyCloudyDay.svg";
+import partlyCloudyNight from "@/assets/weathericons/partlyCloudyNight.svg";
+import rainy from "@/assets/weathericons/rainy.svg";
+import thunderstorm from "@/assets/weathericons/thunderstorm.svg";
+import showers from "@/assets/weathericons/showers.svg";
+import clearDay from "@/assets/weathericons/clearDay.svg";
 
 export const weatherConditions = {
   0: { label: "Klarer Himmel", icon: clearDay },

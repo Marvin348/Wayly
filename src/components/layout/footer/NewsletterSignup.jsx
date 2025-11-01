@@ -2,7 +2,7 @@ const NewsletterSignup = () => {
   return (
     <div className="mt-4 md:mt-0">
       <h3 className=" font-semibold text-[1.05rem] mb-4">Bleib auf dem Laufenden!</h3>
-      <p className="text-sm mb-2 text-gray-100">
+      <p className="text-sm mb-2 text-gray-300">
         Abonniere unseren Newsletter und erhalte spannende Updates von Wayly!
       </p>
       <form className="text-sm">

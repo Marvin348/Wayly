@@ -1,7 +1,7 @@
 import { FaChevronDown } from "react-icons/fa6";
 import { useState } from "react";
 import footerData from "@/footerData";
-import NewsletterSignup from "@/components/NewsletterSignup";
+import NewsletterSignup from "@/components/layout/footer/NewsletterSignup";
 const Footer = () => {
   const [openSection, setOpenSection] = useState(null);
 
@@ -33,7 +33,10 @@ const Footer = () => {
               {openSection === item.heading && (
                 <ul className="md:hidden">
                   {item.label.map((label) => (
-                    <li className="py-1 text-gray-100 text-sm last:pb-5" key={label}>
+                    <li
+                      className="py-1 text-gray-300 text-sm last:pb-5"
+                      key={label}
+                    >
                       {label}
                     </li>
                   ))}
@@ -42,10 +45,12 @@ const Footer = () => {
 
               {/**Desktop */}
               <div className="hidden md:block">
-                <h3 className="font-semibold text-[1.05rem] mb-4">{item.heading}</h3>
+                <h3 className="font-semibold text-[1.05rem] mb-4">
+                  {item.heading}
+                </h3>
                 <ul>
                   {item.label.map((label) => (
-                    <li className="py-1 text-sm" key={label}>
+                    <li className="py-1 text-sm text-gray-300" key={label}>
                       {label}
                     </li>
                   ))}

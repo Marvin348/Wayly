@@ -1,6 +1,6 @@
 import SavedRouteList from "@/components/savedRoutes/SavedRouteList";
 import ClearSavedRoutes from "@/components/savedRoutes/ClearSavedRoutes";
-import useRoutesStore from "../../store/useRoutesStore";
+import useRoutesStore from "@/store/useRoutesStore";
 
 const SavedRoutesLayout = () => {
   const routes = useRoutesStore((state) => state.routes);

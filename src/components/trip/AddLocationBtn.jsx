@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaLocationDot } from "react-icons/fa6";
-import LocationModal from "@/components/LocationModal";
+import LocationModal from "@/components/trip/LocationModal";
 
 const AddLocationBtn = () => {
   const [isOpen, setIsOpen] = useState(false);

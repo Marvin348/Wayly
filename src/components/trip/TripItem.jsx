@@ -1,5 +1,5 @@
-import Counter from "@/components/Counter";
-import Deletebtn from "@/components/Deletebtn";
+import Counter from "@/components/trip/Counter";
+import Deletebtn from "@/components/trip/Deletebtn";
 import useTripStore from "@/store/useTripStore";
 
 const TripItem = ({ id }) => {

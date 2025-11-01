@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Searchbar from "@/components/Searchbar";
-import SearchHeader from "@/components/SearchHeader";
+import Searchbar from "@/components/searchLocation/Searchbar";
+import SearchHeader from "@/components/searchLocation/SearchHeader";
 
 const SearchSection = () => {
   const [isSearching, setIsSearching] = useState(false);
@@ -10,7 +10,7 @@ const SearchSection = () => {
       <div className={`${isSearching ? "hidden md:block" : "block"}`}>
         <SearchHeader />
       </div>
-      <Searchbar setIsSearching={setIsSearching} />
+      <Searchbar onSearch={() => setIsSearching(true)} />
     </div>
   );
 };

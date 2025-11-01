@@ -1,19 +1,17 @@
 import { FaLocationDot } from "react-icons/fa6";
 import { IoIosCloseCircle } from "react-icons/io";
 import { useState } from "react";
-import SearchResultsList from "@/components/SearchResultsList";
+import SearchResultsList from "@/components/searchLocation/SearchResultsList";
 import useLocation from "@/hooks/useLocation";
 import useTripStore from "@/store/useTripStore";
 
-const Searchbar = ({ setIsSearching, onClose }) => {
+const Searchbar = ({ onSearch, onClose }) => {
   const [showDropdown, setShowDropdown] = useState(false);
 
-  // Zustand-Store Werte & Funktionen
   const searchTerm = useTripStore((state) => state.searchTerm);
   const setSearchTerm = useTripStore((state) => state.setSearchTerm);
   const addMarker = useTripStore((state) => state.addMarker);
 
-  // Custom Hook, nutzt den aktuellen searchTerm
   const { location } = useLocation(searchTerm);
 
   const handleClick = () => {
@@ -33,7 +31,7 @@ const Searchbar = ({ setIsSearching, onClose }) => {
             setSearchTerm(e.target.value);
             setShowDropdown(true);
           }}
-          onFocus={() => setIsSearching(true)}
+          onFocus={onSearch}
         />
         <button className="absolute left-2 top-0 bottom-0 text-gray-500">
           <FaLocationDot />

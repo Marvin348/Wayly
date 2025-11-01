@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { SEARCH_LOCATION_URL } from "../constants/api";
+import { SEARCH_LOCATION_URL } from "@/constants/api";
 
 const useLocation = (searchTerm) => {
   const [location, setLocation] = useState([]);

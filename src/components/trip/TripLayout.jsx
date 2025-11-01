@@ -1,6 +1,6 @@
-import MapView from "@/components/MapView";
-import SearchSection from "@/components/SearchSection";
-import TripPlannerContainer from "@/components/TripPlannerContainer";
+import MapView from "@/components/trip/MapView";
+import SearchSection from "@/components/searchLocation/SearchSection";
+import TripPlannerContainer from "@/components/trip/TripPlannerContainer";
 import useTripStore from "@/store/useTripStore";
 
 const TripLayout = () => {

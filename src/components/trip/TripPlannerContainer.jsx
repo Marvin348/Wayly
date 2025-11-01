@@ -1,6 +1,6 @@
-import AddLocationBtn from "@/components/AddLocationBtn";
-import TripList from "@/components/TripList";
-import SaveRouteButton from "@/components/SaveRouteButton";
+import AddLocationBtn from "@/components/trip/AddLocationBtn";
+import TripList from "@/components/trip/TripList";
+import SaveRouteButton from "@/components/trip/SaveRouteButton";
 import useTripStore from "@/store/useTripStore";
 
 

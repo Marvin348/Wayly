@@ -10,6 +10,7 @@ const useTripStore = create(
       routes: [],
 
       setSearchTerm: (value) => set({ searchTerm: value }),
+
       setSelectedLocation: (location) => set({ selectedLocation: location }),
 
       handleSelect: (item) =>

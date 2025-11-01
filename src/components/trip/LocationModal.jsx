@@ -1,4 +1,4 @@
-import Searchbar from "@/components/Searchbar";
+import Searchbar from "@/components/searchLocation/Searchbar";
 import useScrollLock from "@/hooks/useScrollLock";
 
 const LocationModal = ({ setIsOpen }) => {

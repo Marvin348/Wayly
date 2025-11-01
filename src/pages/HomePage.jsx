@@ -1,4 +1,4 @@
-import TripLayout from "@/components/TripLayout";
+import TripLayout from "@/components/trip/TripLayout";
 const HomePage = () => {
 
   return <TripLayout />;

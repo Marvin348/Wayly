@@ -3,7 +3,9 @@ import { RiMoonClearFill } from "react-icons/ri";
 import useTripStore from "@/store/useTripStore";
 const Counter = ({ id }) => {
   const updateNights = useTripStore((state) => state.updateNights);
-  const markers = useTripStore((state) => state.markers.find((m) => m.id === id));
+  const markers = useTripStore((state) =>
+    state.markers.find((m) => m.id === id)
+  );
 
   return (
     <div className="flex items-center gap-4 mt-2">

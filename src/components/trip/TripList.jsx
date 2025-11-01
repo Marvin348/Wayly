@@ -1,5 +1,5 @@
-import TripItem from "@/components/TripItem";
-import TripConnection from "@/components/TripConnection";
+import TripItem from "@/components/trip/TripItem";
+import TripConnection from "@/components/trip/TripConnection";
 import useTripStore from "@/store/useTripStore";
 
 const TripList = () => {

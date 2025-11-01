@@ -22,8 +22,6 @@ const FitBounds = ({ markers }) => {
 const MapView = () => {
   const markers = useTripStore((state) => state.markers);
 
-  console.log(markers);
-
   return (
     <MapContainer
       center={[DEFAULT_LOCATION.lat, DEFAULT_LOCATION.lon]}

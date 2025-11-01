@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FORECAST_BASE_URL } from "../constants/api";
+import { FORECAST_BASE_URL } from "@/constants/api";
 
 const useWeatherForecast = (lat, lon) => {
   const [weatherForecast, setWeatherForecast] = useState(null);
