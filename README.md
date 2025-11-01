@@ -24,6 +24,9 @@ Ein interaktiver Reiseplaner, mit dem Nutzer Orte suchen, auf einer Karte anzeig
 - Geocoding / Location API
 - React-hot-toast
 
+## 🌐 Live Demo
+[Live Demo](https://home-5018920212.app-ionos.space)
+
 ## Screenshots
 
 ### Desktop
